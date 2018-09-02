@@ -3,11 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Login/Logout animation concept</title>
+  <title>Order Take</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
 
   <!-- Import and configure the Firebase SDK -->
   <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
@@ -20,46 +17,24 @@
   <script src="/__/firebase/init.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js">
   </script>
-	<script>
-	  // Initialize Firebase
-	  // TODO: Replace with your project's customized code snippet
-	  var config = {
-	    apiKey: "AIzaSyDcKPDYBjWpmnB3HO2k30mTcicxoTkty0I",
-	    authDomain: "sakpha-793a9.firebaseapp.com",
-	    databaseURL: "https://sakpha-793a9.firebaseio.com",
-	    projectId: "sakpha-793a9",
-	    storageBucket: "sakpha-793a9.appspot.com",
-	    messagingSenderId: "654158830966"
-	  };
-	  firebase.initializeApp(config);
-	</script>
 
  </head>
  <body>
+
  	Order TAKE !!
- 	<form>
+ 	<form id="orderTakeForm" action="">
  		<p id="shopID"> </p>
  		<input type="textbox" id="customerTel" placeholder="Customer Tel.">
  		<br><br>
  		<input type="textbox" id="tagID" placeholder="Click HERE-Before Scan">
  		<br><br>
- 		<button>Confirm</button>
+    <button type="submit" id="confirmOrderBtn">Confirm</button>
  	</form>
+
  </body>
- <script type="text/javascript">
- 	// Get a reference to the database service
-	var database = firebase.database();
-	firebase.database().ref('users/' + userId).set({
-    username: "name",
-    email: "email",
-    profile_picture : "imageUrl"
-  	});
 
- 	// Call UID of user
- 	firebase.auth().onAuthStateChanged(function(user) {
- 		$("#shopID").val() = user.uid;
- 	});
+ 
+ <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+ <script src='js/shop-order-take.js'></script>
 
-
- </script>
 </html>
