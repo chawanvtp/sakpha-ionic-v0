@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sakpha-ionic-v0/static/css/main.814ad1f8.chunk.css",
+    "main.css": "/sakpha-ionic-v0/static/css/main.d209ee38.chunk.css",
     "main.js": "/sakpha-ionic-v0/static/js/main.30c6b4c9.chunk.js",
     "main.js.map": "/sakpha-ionic-v0/static/js/main.30c6b4c9.chunk.js.map",
     "runtime-main.js": "/sakpha-ionic-v0/static/js/runtime-main.01daf77c.js",
@@ -9,10 +9,10 @@
     "static/js/2.20d46526.chunk.js": "/sakpha-ionic-v0/static/js/2.20d46526.chunk.js",
     "static/js/2.20d46526.chunk.js.map": "/sakpha-ionic-v0/static/js/2.20d46526.chunk.js.map",
     "index.html": "/sakpha-ionic-v0/index.html",
-    "precache-manifest.beff25829fce79007ad228a3737d2d0c.js": "/sakpha-ionic-v0/precache-manifest.beff25829fce79007ad228a3737d2d0c.js",
+    "precache-manifest.bceee38eeedbeea2a931f86dc86eb588.js": "/sakpha-ionic-v0/precache-manifest.bceee38eeedbeea2a931f86dc86eb588.js",
     "service-worker.js": "/sakpha-ionic-v0/service-worker.js",
     "static/css/2.ddd42307.chunk.css.map": "/sakpha-ionic-v0/static/css/2.ddd42307.chunk.css.map",
-    "static/css/main.814ad1f8.chunk.css.map": "/sakpha-ionic-v0/static/css/main.814ad1f8.chunk.css.map",
+    "static/css/main.d209ee38.chunk.css.map": "/sakpha-ionic-v0/static/css/main.d209ee38.chunk.css.map",
     "static/media/BB1.png": "/sakpha-ionic-v0/static/media/BB1.6eec9ec4.png",
     "static/media/BB2.png": "/sakpha-ionic-v0/static/media/BB2.9b63370c.png",
     "static/media/LoadingIcon.png": "/sakpha-ionic-v0/static/media/LoadingIcon.4ae89ec0.png",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.01daf77c.js",
     "static/css/2.ddd42307.chunk.css",
     "static/js/2.20d46526.chunk.js",
-    "static/css/main.814ad1f8.chunk.css",
+    "static/css/main.d209ee38.chunk.css",
     "static/js/main.30c6b4c9.chunk.js"
   ]
 }
