@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sakpha-ionic-v0/static/css/main.3a3793a6.chunk.css",
-    "main.js": "/sakpha-ionic-v0/static/js/main.30c6b4c9.chunk.js",
-    "main.js.map": "/sakpha-ionic-v0/static/js/main.30c6b4c9.chunk.js.map",
+    "main.js": "/sakpha-ionic-v0/static/js/main.fe2e437a.chunk.js",
+    "main.js.map": "/sakpha-ionic-v0/static/js/main.fe2e437a.chunk.js.map",
     "runtime-main.js": "/sakpha-ionic-v0/static/js/runtime-main.01daf77c.js",
     "runtime-main.js.map": "/sakpha-ionic-v0/static/js/runtime-main.01daf77c.js.map",
     "static/css/2.ddd42307.chunk.css": "/sakpha-ionic-v0/static/css/2.ddd42307.chunk.css",
     "static/js/2.20d46526.chunk.js": "/sakpha-ionic-v0/static/js/2.20d46526.chunk.js",
     "static/js/2.20d46526.chunk.js.map": "/sakpha-ionic-v0/static/js/2.20d46526.chunk.js.map",
     "index.html": "/sakpha-ionic-v0/index.html",
-    "precache-manifest.df9d952dd8ee6c90b0e1cd9b849376e0.js": "/sakpha-ionic-v0/precache-manifest.df9d952dd8ee6c90b0e1cd9b849376e0.js",
+    "precache-manifest.227f96f4ee29203aec2c1903f919e892.js": "/sakpha-ionic-v0/precache-manifest.227f96f4ee29203aec2c1903f919e892.js",
     "service-worker.js": "/sakpha-ionic-v0/service-worker.js",
     "static/css/2.ddd42307.chunk.css.map": "/sakpha-ionic-v0/static/css/2.ddd42307.chunk.css.map",
     "static/css/main.3a3793a6.chunk.css.map": "/sakpha-ionic-v0/static/css/main.3a3793a6.chunk.css.map",
@@ -29,6 +29,6 @@
     "static/css/2.ddd42307.chunk.css",
     "static/js/2.20d46526.chunk.js",
     "static/css/main.3a3793a6.chunk.css",
-    "static/js/main.30c6b4c9.chunk.js"
+    "static/js/main.fe2e437a.chunk.js"
   ]
 }
