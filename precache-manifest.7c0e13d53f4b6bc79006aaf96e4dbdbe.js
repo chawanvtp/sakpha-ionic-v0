@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2147cbe5608d0df3ef6d886d75f7d80d",
+    "revision": "681de71591db4ae3c4903f6ddf6ee14b",
     "url": "/sakpha-ionic-v0/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sakpha-ionic-v0/static/css/2.ddd42307.chunk.css"
   },
   {
-    "revision": "694e0bfb81ce66b20cd8",
-    "url": "/sakpha-ionic-v0/static/css/main.13960f61.chunk.css"
+    "revision": "545023e7abc8b147d4f3",
+    "url": "/sakpha-ionic-v0/static/css/main.78db0b59.chunk.css"
   },
   {
     "revision": "4c06b005bbbd4e792821",
     "url": "/sakpha-ionic-v0/static/js/2.20d46526.chunk.js"
   },
   {
-    "revision": "694e0bfb81ce66b20cd8",
-    "url": "/sakpha-ionic-v0/static/js/main.67ed2e83.chunk.js"
+    "revision": "545023e7abc8b147d4f3",
+    "url": "/sakpha-ionic-v0/static/js/main.8508e5a8.chunk.js"
   },
   {
     "revision": "05f45b84b70eeb67bd1c",
