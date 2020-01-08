@@ -1,5 +1,5 @@
 Arguments: 
-  D:\Program Files\nodejs\node.exe D:\Program Files (x86)\Yarn\bin\yarn.js add @types/react-loading-overlay
+  D:\Program Files\nodejs\node.exe D:\Program Files (x86)\Yarn\bin\yarn.js upgrade serialize-javascript
 
 PATH: 
   C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\VanDyke Software\Clients\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;D:\Program Files (x86)\Yarn\bin\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Thinkpad\AppData\Local\Microsoft\WindowsApps;;D:\Program Files\Microsoft VS Code\bin;C:\Users\Thinkpad\AppData\Roaming\npm;C:\Users\Thinkpad\AppData\Local\Yarn\bin
@@ -14,22 +14,13 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2freact-loading-overlay: Not found
-      at Request.params.callback [as _callback] (D:\Program Files (x86)\Yarn\lib\cli.js:65939:18)
-      at Request.self.callback (D:\Program Files (x86)\Yarn\lib\cli.js:140464:22)
-      at Request.emit (events.js:198:13)
-      at Request.<anonymous> (D:\Program Files (x86)\Yarn\lib\cli.js:141436:10)
-      at Request.emit (events.js:198:13)
-      at IncomingMessage.<anonymous> (D:\Program Files (x86)\Yarn\lib\cli.js:141358:12)
-      at Object.onceWrapper (events.js:286:20)
-      at IncomingMessage.emit (events.js:203:15)
-      at endReadableNT (_stream_readable.js:1129:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  Error: ENOTEMPTY: directory not empty, rmdir 'D:\ICK\Test_server\sakpha-ionic-v0\sakpha-ionic-v0\node_modules\.cache\babel-loader'
 
 npm manifest: 
   {
     "name": "angeling",
-    "version": "3.2.27",
+    "version": "3.2.28",
+    "homepage": "http://chawanvtp.github.io/sakpha-ionic-v0",
     "private": true,
     "jest": {
       "verbose": true
@@ -58,6 +49,7 @@ npm manifest:
       "@types/redux-thunk": "^2.1.0",
       "bootstrap": "^4.3.1",
       "core-js": "^3.6.1",
+      "gh-pages": "^2.2.0",
       "google-map-react": "^1.1.5",
       "history": "^4.10.1",
       "react": "^16.11.0",
@@ -66,12 +58,12 @@ npm manifest:
       "react-burger-menu": "^2.6.12",
       "react-dom": "^16.11.0",
       "react-favicon": "^0.0.17",
-      "react-loading-overlay": "^1.0.1",
       "react-multi-carousel": "^2.4.2",
       "react-popper": "^1.3.4",
       "react-redux": "^7.1.1",
       "react-router-dom": "^5.1.2",
       "react-scripts": "3.2.0",
+      "react-spinners": "^0.8.0",
       "react-svg-star-rating": "^1.0.2",
       "redux": "^4.0.4",
       "tslint": "^5.20.0",
@@ -79,10 +71,12 @@ npm manifest:
       "typescript": "^3.6.4"
     },
     "scripts": {
-      "start": "react-scripts start --host 0.0.0.0",
+      "start": "react-scripts start",
       "build": "react-scripts build",
       "test": "react-scripts test",
-      "eject": "react-scripts eject"
+      "eject": "react-scripts eject",
+      "predeploy": "yarn run build",
+      "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
       "extends": "react-app"
@@ -1056,6 +1050,27 @@ Lockfile:
       "@emotion/stylis" "0.8.5"
       "@emotion/utils" "0.11.3"
       "@emotion/weak-memoize" "0.2.5"
+  
+  "@emotion/core@^10.0.15":
+    version "10.0.27"
+    resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.27.tgz#7c3f78be681ab2273f3bf11ca3e2edc4a9dd1fdc"
+    integrity sha512-XbD5R36pVbohQMnKfajHv43g8EbN4NHdF6Zh9zg/C0nr0jqwOw3gYnC07Xj3yG43OYSRyrGsoQ5qPwc8ycvLZw==
+    dependencies:
+      "@babel/runtime" "^7.5.5"
+      "@emotion/cache" "^10.0.27"
+      "@emotion/css" "^10.0.27"
+      "@emotion/serialize" "^0.11.15"
+      "@emotion/sheet" "0.9.4"
+      "@emotion/utils" "0.11.3"
+  
+  "@emotion/css@^10.0.27":
+    version "10.0.27"
+    resolved "https://registry.yarnpkg.com/@emotion/css/-/css-10.0.27.tgz#3a7458198fbbebb53b01b2b87f64e5e21241e14c"
+    integrity sha512-6wZjsvYeBhyZQYNrGoR5yPMYbMBNEnanDrqmsqS1mzDm1cOTu12shvl2j4QHNS36UaTE0USIJawCH9C8oW34Zw==
+    dependencies:
+      "@emotion/serialize" "^0.11.15"
+      "@emotion/utils" "0.11.3"
+      babel-plugin-emotion "^10.0.27"
   
   "@emotion/hash@0.7.4":
     version "0.7.4"
@@ -2287,6 +2302,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
     integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
   
+  async@^2.6.1:
+    version "2.6.3"
+    resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
+    integrity sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
+    dependencies:
+      lodash "^4.17.14"
+  
   asynckit@^0.4.0:
     version "0.4.0"
     resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -3112,7 +3134,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.1.tgz#3863ce3ca92d0831dcf2a102f5fb4b5926afd0f9"
     integrity sha512-cCuLsMhJeWQ/ZpsFTbE765kvVfoeSddc4nU3up4fV+fDBcfUXnbITJ+JzhkdjzOqhURjZgujxaioam4RM9yGUg==
   
-  commander@^2.12.1:
+  commander@^2.12.1, commander@^2.18.0:
     version "2.20.3"
     resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
     integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -3340,16 +3362,6 @@ Lockfile:
     dependencies:
       bn.js "^4.1.0"
       elliptic "^6.0.0"
-  
-  create-emotion@^10.0.27:
-    version "10.0.27"
-    resolved "https://registry.yarnpkg.com/create-emotion/-/create-emotion-10.0.27.tgz#cb4fa2db750f6ca6f9a001a33fbf1f6c46789503"
-    integrity sha512-fIK73w82HPPn/RsAij7+Zt8eCE8SptcJ3WoRMfxMtjteYxud8GDTKKld7MYwAX2TVhrw29uR1N/bVGxeStHILg==
-    dependencies:
-      "@emotion/cache" "^10.0.27"
-      "@emotion/serialize" "^0.11.15"
-      "@emotion/sheet" "0.9.4"
-      "@emotion/utils" "0.11.3"
   
   create-hash@^1.1.0, create-hash@^1.1.2:
     version "1.2.0"
@@ -4049,6 +4061,11 @@ Lockfile:
       minimalistic-assert "^1.0.0"
       minimalistic-crypto-utils "^1.0.0"
   
+  email-addresses@^3.0.1:
+    version "3.1.0"
+    resolved "https://registry.yarnpkg.com/email-addresses/-/email-addresses-3.1.0.tgz#cabf7e085cbdb63008a70319a74e6136188812fb"
+    integrity sha512-k0/r7GrWVL32kZlGwfPNgB2Y/mMXVTq/decgLczm/j34whdaspNrZO8CnXPf1laaHxI6ptUlsnAxN+UAPw+fzg==
+  
   emoji-regex@^7.0.1, emoji-regex@^7.0.2:
     version "7.0.3"
     resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
@@ -4058,14 +4075,6 @@ Lockfile:
     version "2.1.0"
     resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
     integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
-  
-  emotion@^10.0.1:
-    version "10.0.27"
-    resolved "https://registry.yarnpkg.com/emotion/-/emotion-10.0.27.tgz#f9ca5df98630980a23c819a56262560562e5d75e"
-    integrity sha512-2xdDzdWWzue8R8lu4G76uWX5WhyQuzATon9LmNeCy/2BHVC6dsEpfhN1a0qhELgtDVdjyEA6J8Y/VlI5ZnaH0g==
-    dependencies:
-      babel-plugin-emotion "^10.0.27"
-      create-emotion "^10.0.27"
   
   encodeurl@~1.0.2:
     version "1.0.2"
@@ -4679,6 +4688,28 @@ Lockfile:
       loader-utils "^1.0.2"
       schema-utils "^1.0.0"
   
+  filename-reserved-regex@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/filename-reserved-regex/-/filename-reserved-regex-1.0.0.tgz#e61cf805f0de1c984567d0386dc5df50ee5af7e4"
+    integrity sha1-5hz4BfDeHJhFZ9A4bcXfUO5a9+Q=
+  
+  filenamify-url@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/filenamify-url/-/filenamify-url-1.0.0.tgz#b32bd81319ef5863b73078bed50f46a4f7975f50"
+    integrity sha1-syvYExnvWGO3MHi+1Q9GpPeXX1A=
+    dependencies:
+      filenamify "^1.0.0"
+      humanize-url "^1.0.0"
+  
+  filenamify@^1.0.0:
+    version "1.2.1"
+    resolved "https://registry.yarnpkg.com/filenamify/-/filenamify-1.2.1.tgz#a9f2ffd11c503bed300015029272378f1f1365a5"
+    integrity sha1-qfL/0RxQO+0wABUCknI3jx8TZaU=
+    dependencies:
+      filename-reserved-regex "^1.0.0"
+      strip-outer "^1.0.0"
+      trim-repeated "^1.0.0"
+  
   filesize@3.6.1:
     version "3.6.1"
     resolved "https://registry.yarnpkg.com/filesize/-/filesize-3.6.1.tgz#090bb3ee01b6f801a8a8be99d31710b3422bb317"
@@ -4975,6 +5006,18 @@ Lockfile:
     integrity sha1-Xv+OPmhNVprkyysSgmBOi6YhSfo=
     dependencies:
       assert-plus "^1.0.0"
+  
+  gh-pages@^2.2.0:
+    version "2.2.0"
+    resolved "https://registry.yarnpkg.com/gh-pages/-/gh-pages-2.2.0.tgz#74ebeaca8d2b9a11279dcbd4a39ddfff3e6caa24"
+    integrity sha512-c+yPkNOPMFGNisYg9r4qvsMIjVYikJv7ImFOhPIVPt0+AcRUamZ7zkGRLHz7FKB0xrlZ+ddSOJsZv9XAFVXLmA==
+    dependencies:
+      async "^2.6.1"
+      commander "^2.18.0"
+      email-addresses "^3.0.1"
+      filenamify-url "^1.0.0"
+      fs-extra "^8.1.0"
+      globby "^6.1.0"
   
   glob-parent@^3.1.0:
     version "3.1.0"
@@ -5394,6 +5437,14 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
     integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
+  
+  humanize-url@^1.0.0:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/humanize-url/-/humanize-url-1.0.1.tgz#f4ab99e0d288174ca4e1e50407c55fbae464efff"
+    integrity sha1-9KuZ4NKIF0yk4eUEB8VfuuRk7/8=
+    dependencies:
+      normalize-url "^1.0.0"
+      strip-url-auth "^1.0.0"
   
   hyphenate-style-name@^1.0.3:
     version "1.0.3"
@@ -7336,7 +7387,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/normalize-scroll-left/-/normalize-scroll-left-0.2.0.tgz#9445d74275f303cc661e113329aefa492f58114c"
     integrity sha512-t5oCENZJl8TGusJKoCJm7+asaSsPuNmK6+iEjrZ5TyBj2f02brCRsd4c83hwtu+e5d4LCSBZ0uoDlMjBo+A8yA==
   
-  normalize-url@1.9.1:
+  normalize-url@1.9.1, normalize-url@^1.0.0:
     version "1.9.1"
     resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-1.9.1.tgz#2cc0d66b31ea23036458436e3620d85954c66c3c"
     integrity sha1-LMDWazHqIwNkWENuNiDYWVTGbDw=
@@ -8995,15 +9046,6 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
     integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
   
-  react-loading-overlay@^1.0.1:
-    version "1.0.1"
-    resolved "https://registry.yarnpkg.com/react-loading-overlay/-/react-loading-overlay-1.0.1.tgz#ee3b1ad56c45bb2f1ba46d4820ba0d06cd319a91"
-    integrity sha512-aUjtZ8tNXBSx+MbD2SQs0boPbeTAGTh+I5U9nWjDzMasKlYr58RJpr57c8W7uApeLpOkAGbInExRi6GamNC2bA==
-    dependencies:
-      emotion "^10.0.1"
-      prop-types "^15.6.2"
-      react-transition-group "^2.5.0"
-  
   react-multi-carousel@^2.4.2:
     version "2.4.2"
     resolved "https://registry.yarnpkg.com/react-multi-carousel/-/react-multi-carousel-2.4.2.tgz#ae8e016f5ddcd194a05dabb1f1e53c11c58b1ca6"
@@ -9137,6 +9179,13 @@ Lockfile:
     optionalDependencies:
       fsevents "2.0.7"
   
+  react-spinners@^0.8.0:
+    version "0.8.0"
+    resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.8.0.tgz#a64f5bc4c301f463841cf75ed67d6f64a365997c"
+    integrity sha512-xeoRNn4YlsqKaqBm0SgCrRt3sI99CGFraZbw9noD9RLKwumEJ55e9dkXjdEbZgJUmPymQCDrsazQe79DoFd9IQ==
+    dependencies:
+      "@emotion/core" "^10.0.15"
+  
   react-svg-star-rating@^1.0.2:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/react-svg-star-rating/-/react-svg-star-rating-1.0.2.tgz#d86706e61f2ab543de88b01238f871e5e2b0f754"
@@ -9144,16 +9193,6 @@ Lockfile:
     dependencies:
       classnames "^2.2.6"
       lodash "^4.17.11"
-  
-  react-transition-group@^2.5.0:
-    version "2.9.0"
-    resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.9.0.tgz#df9cdb025796211151a436c69a8f3b97b5b07c8d"
-    integrity sha512-+HzNTCHpeQyl4MJ/bdE0u6XRMe9+XG/+aL4mCxVN4DnPBQ0/5bfHWPDuOZUzYdMj94daZaZdCCc1Dzt9R/xSSg==
-    dependencies:
-      dom-helpers "^3.4.0"
-      loose-envify "^1.4.0"
-      prop-types "^15.6.2"
-      react-lifecycles-compat "^3.0.4"
   
   react-transition-group@^4.0.0, react-transition-group@^4.3.0:
     version "4.3.0"
@@ -10265,6 +10304,18 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
     integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
   
+  strip-outer@^1.0.0:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/strip-outer/-/strip-outer-1.0.1.tgz#b2fd2abf6604b9d1e6013057195df836b8a9d631"
+    integrity sha512-k55yxKHwaXnpYGsOzg4Vl8+tDrWylxDEpknGjhTiZB8dFRU5rTo9CAzeycivxV3s+zlTKwrs6WxMxR95n26kwg==
+    dependencies:
+      escape-string-regexp "^1.0.2"
+  
+  strip-url-auth@^1.0.0:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/strip-url-auth/-/strip-url-auth-1.0.1.tgz#22b0fa3a41385b33be3f331551bbb837fa0cd7ae"
+    integrity sha1-IrD6OkE4WzO+PzMVUbu4N/oM164=
+  
   style-loader@1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-1.0.0.tgz#1d5296f9165e8e2c85d24eee0b7caf9ec8ca1f82"
@@ -10521,6 +10572,13 @@ Lockfile:
     integrity sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
     dependencies:
       punycode "^2.1.0"
+  
+  trim-repeated@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/trim-repeated/-/trim-repeated-1.0.0.tgz#e3646a2ea4e891312bf7eace6cfb05380bc01c21"
+    integrity sha1-42RqLqTokTEr9+rObPsFOAvAHCE=
+    dependencies:
+      escape-string-regexp "^1.0.2"
   
   ts-pnp@1.1.4, ts-pnp@^1.1.2:
     version "1.1.4"

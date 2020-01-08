@@ -33,7 +33,7 @@ class PurchaseModal extends Component<userCartProps & { toggleFunc: Function, di
                 <Modal
                     size="lg"
                     show={this.state.lgShow}
-                    onHide={() => this.props.toggleFunc()}
+                    onHide={() => { this.props.toggleFunc(); this.setState({ current_stage: 0 }) }}
                     aria-labelledby="example-modal-sizes-title-lg"
                     dialogClassName={this.state.current_stage < 1 ? "dialog" : "dialog store"}
                     className="PurchaseModal"
@@ -59,7 +59,7 @@ class PurchaseModal extends Component<userCartProps & { toggleFunc: Function, di
                                                 src={typeof (this.props.product_detail.image_url) !== "string" ? this.props.product_detail.image_url[0] : this.props.product_detail.image_url + ""}
                                                 className="w-100"
                                                 alt={typeof (this.props.product_detail.image_url) !== "string" ? this.props.product_detail.image_url[0] : this.props.product_detail.image_url + ""}
-                                            /> : ""
+                                            /> : <div />
                                         }
                                     </div>
                                     <div className="col-8 text-left detail-wrapper">
@@ -125,9 +125,9 @@ class PurchaseModal extends Component<userCartProps & { toggleFunc: Function, di
                         </Modal.Body>
                         :
                         <Modal.Body>
-                            <InputGroup className="">
-                                <StoreList user={this.props.user} product_in_cart={this.props.product_in_cart} product_detail={this.props.product_detail} quantity={this.state.Quantity} purchaseFunc={this.buyBtnClicked} updateStageFunc={this.updateStage} />
-                            </InputGroup>
+                            {/* <InputGroup className=""> */}
+                            <StoreList user={this.props.user} product_in_cart={this.props.product_in_cart} product_detail={this.props.product_detail} quantity={this.state.Quantity} purchaseFunc={this.buyBtnClicked} updateStageFunc={this.updateStage} />
+                            {/* </InputGroup> */}
                         </Modal.Body>
                     }
 

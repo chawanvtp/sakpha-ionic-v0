@@ -102,9 +102,7 @@ class StoreList extends Component<userCartProps & { product_detail: ProductCatal
                     </div >
                 )
             ))
-        this.setState({
-            shopsList: shops
-        })
+        this.setState({ shopsList: shops })
     }
 
     async getSeller(product_id: String) {

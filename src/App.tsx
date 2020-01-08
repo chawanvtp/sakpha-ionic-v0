@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'react-multi-carousel/lib/styles.css';
-import { Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import Favicon from 'react-favicon'
 import HomePage from './pages/home/home'
@@ -30,7 +30,8 @@ const App: React.FC = () => {
   return (
     <div className="App-Page-top">
       <meta name="google" content="notranslate" />
-      <Router history={history}>
+      {/* <Router history={history}> */}
+      <Router>
         <Favicon url={require("./images/icons/favicon.ico")} />
         <Switch>
           <Route exact={true} path="/" component={HomePage} />

@@ -20,14 +20,15 @@
 }
 
 .PurchaseModal .dialog .modal-content {
-    position: absolute;
+    position: fixed;
     bottom: 0%;
     overflow: auto;
     padding-bottom: 6rem;
+    background-color: rgb(248, 249, 250);
 }
 
 .PurchaseModal .dialog.store .modal-content {
-    position: absolute;
+    position: fixed;
     top: 30% !important;
     overflow: auto;
 }
@@ -140,6 +141,7 @@
     background-color: #ffffff;
     color: #000000;
     border-bottom: 0.3em solid rgb(248, 249, 250);
+    z-index: 1020;
 }
 
 .PurchaseModal .modal-title {
@@ -148,7 +150,8 @@
 
 .PurchaseModal .modal-body {
     background: rgb(248, 249, 250);
-    /* padding-bottom: 7rem; */
+    padding-top: 0 !important;
+    margin-top: 1rem !important;
 }
 
 .PurchaseModal .modal-header .header-wrapper {
