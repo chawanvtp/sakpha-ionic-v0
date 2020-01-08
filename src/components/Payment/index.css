@@ -1,0 +1,20 @@
+.Payment-Page .Payment-Page-wrapper .card .header {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #212429;
+    margin-bottom: 1.1rem;
+    margin-top: 1rem;
+}
+
+.Payment-Page .Payment-Page-wrapper .card .card-text {
+    font-size: 16px;
+    line-height: 21px;
+    color: #495057;
+}
+
+
+.Payment-Page .Payment-Page-wrapper .card .card-text.top {
+    border-top: 1px solid rgb(221, 226, 229);
+    padding-top: 0.75rem;
+}

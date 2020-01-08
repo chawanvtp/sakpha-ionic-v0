@@ -1,0 +1,78 @@
+.app-version {
+    position: fixed;
+    right: 0rem;
+    bottom: -1rem;
+    margin-right: 0.5rem;
+}
+
+.Landing-Page {
+    margin-top: -4rem;
+    background: url('../../images/promo_01.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+}
+
+.Landing-Page .card {
+    height: 90%;
+    border: none;
+    background-color: transparent;
+}
+
+.Landing-Page .card .card-body {
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+}
+
+.Landing-Page h3{
+    font-weight: 900 !important;
+}
+
+.Landing-Page h4{
+    font-weight: 900 !important;
+}
+
+@media (min-width: 900px) {
+    .Landing-Page h3 {
+        font-size: 4rem !important;
+    }
+    .Landing-Page h4 {
+        font-size: 4rem !important;
+    }
+    .Landing-Page .btn {
+        font-size: 3rem !important;
+    }
+    .Landing-Page .form-control{
+        font-size: 4rem !important;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .Landing-Page .card .card-body {
+        bottom: 15% !important;
+        width: 100%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+    .Landing-Page h3 {
+        font-size: 3rem !important;
+    }
+    .Landing-Page h4 {
+        font-size: 3rem !important;
+    }
+    .Landing-Page .btn {
+        font-size: 2rem !important;
+    }
+    .Landing-Page .form-control{
+        font-size: 3rem !important;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .Landing-Page .card .card-body {
+        bottom: 0% !important;
+        width: 100%;
+    }
+}

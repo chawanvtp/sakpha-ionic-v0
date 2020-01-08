@@ -1,0 +1,17 @@
+.ResetPassword-Page {
+    margin-top: 0rem;
+}
+
+.ResetPassword-Page .register-btn {
+    width: 100%;
+}
+
+.ResetPassword-Page .login-submit-btn {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ResetPassword-Page .input-group-prepend .input-group-text svg{
+    width: 1em;
+}

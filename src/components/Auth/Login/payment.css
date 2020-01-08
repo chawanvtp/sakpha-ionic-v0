@@ -1,0 +1,18 @@
+.Payment-Page .card .login-submit-btn {
+    background: rgba(134, 192, 32, 1);
+    border: none;
+    box-shadow: 0 2px 3px 0 rgba(134, 192, 32, 0.2), 0 4px 4px 0 rgba(134, 192, 32, 0.19);
+}
+
+.Payment-Page .card .otp-request-btn {
+    background: #6c757d;
+    border: none;
+    box-shadow: 0 2px 3px 0 #6c757d, 0 4px 4px 0 #6c757d;
+}
+
+/* LOGIN-Card */
+.Login-Card .login-submit-btn {
+    background: rgba(134, 192, 32, 1);
+    border: none;
+    box-shadow: 0 2px 3px 0 rgba(134, 192, 32, 0.2), 0 4px 4px 0 rgba(134, 192, 32, 0.19);
+}

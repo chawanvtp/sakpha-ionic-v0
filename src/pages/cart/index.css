@@ -1,0 +1,13 @@
+.Cart-Page .empty-wrapper {
+    width: 100%;
+}
+
+.Cart-Page .empty-wrapper .icon-empty {
+    object-fit: contain;
+    padding: 0 0;
+    height: 15rem;
+}
+
+.Cart-Page {
+    margin-bottom: 3rem;
+}

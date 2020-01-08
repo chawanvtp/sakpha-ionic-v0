@@ -1,0 +1,42 @@
+.ProgressBar-Wrapper {
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+}
+
+.ProgressBar-Wrapper .progress {
+    height: auto !important;
+    background-color: #ffffff;
+    padding-top: 0.8rem;
+    padding-bottom: 0.2rem;
+}
+
+.ProgressBar-Wrapper .progress .progress-bar {
+    color: #212429;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: #ffffff;
+}
+
+.ProgressBar-Wrapper .progress .label{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.5rem;
+}
+
+.ProgressBar-Wrapper .progress .label.active{
+    border-bottom: 2px solid #9FCD50;
+}
+
+.ProgressBar-Wrapper .element {
+    height: 100% !important;
+}
+
+.orderDetail-wrapper .ProgressContainer-wrapper .MuiStepper-vertical {
+    background-color: transparent;
+}
+
+.orderDetail-wrapper .ProgressContainer-wrapper .paper {
+    background-color: transparent;
+}

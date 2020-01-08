@@ -1,0 +1,74 @@
+.ProductDetailCard .card .card-img-top {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    padding: 0 0;
+    height: 20rem !important;
+    border: none;
+}
+
+.ProductDetailCard .card {
+    margin: 0 0;
+}
+
+.ProductDetailCard {
+    margin-bottom: 5rem;
+}
+
+.ProductDetailCard .purchase-button {
+    margin-top: 1rem;
+    padding: 0.8rem 0;
+    font-size: 1.5rem;
+    border-radius: 0.5rem !important;
+    background-color: #F7941F;
+    border-color: #F7941F;
+}
+
+.ProductDetailCard .purchase-button-wrapper{
+    padding: 0.5rem 1rem;
+}
+
+.ProductDetailCard .ProductDetailImages img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    padding: 0 0;
+    height: 15rem !important;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.ProductDetailCard .ProductDetailImages li {
+    background-color: rgb(63, 60, 60);
+}
+
+.ProductDetailCard .card .title {
+    padding: 0 0 !important;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+}
+
+.ProductDetailCard .card .common-title {
+    padding: 0 0 !important;
+    font-size: 1.1rem;
+}
+
+.ProductDetailCard .card .brand {
+    padding: 0 0 !important;
+    font-size: 1.2rem;
+}
+
+.ProductDetailCard .card .price {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.ProductDetailCard-star-wrapper div {
+    display: inline;
+}
+
+.ProductDetailCard-Wrapper {
+    padding-right: 0.2rem !important;
+    padding-left: 0.2rem !important;
+}

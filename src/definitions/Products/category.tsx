@@ -1,0 +1,1 @@
+export const CATEGORY_LIST_MOCK = [{ name: "ปุ๋ย", key: "fertilizer", image_url: "BB1.png" }, { name: "ยา", key: "pesticide", image_url: "BB2.png" }]

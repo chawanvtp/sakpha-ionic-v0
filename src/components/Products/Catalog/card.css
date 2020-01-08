@@ -1,0 +1,60 @@
+.Catalog-Modal .modal-body {
+    padding-top: 0;
+}
+
+.Catalog-Modal .modal-header {
+    background-color: #9FCD50;
+}
+
+.Catalog-Modal .header-badge {
+    background-color: #9FCD50;
+}
+
+.ProductCatalogCard .card .card-body {
+    padding-bottom: 0rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.ProductCatalogCard .card {
+    border: none;
+    padding: 0 0.7rem;
+    padding-top: 0.5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 8px 8px 8px 8px;
+}
+
+.ProductCatalogCard .card button {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.ProductCatalogCard .btn {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid #DDE2E5;
+    color: #495057;
+}
+
+.ProductCatalogCard .card .card-img-top {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    padding: 0 0;
+    height: 7rem;
+    border: none;
+}
+
+.ProductCatalogCard-star-wrapper div {
+    display: inline;
+}
+
+.ProductCatalogCard-Wrapper {
+    padding-right: 0.2rem !important;
+    padding-left: 0.2rem !important;
+}

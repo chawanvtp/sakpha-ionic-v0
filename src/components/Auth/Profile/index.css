@@ -1,0 +1,27 @@
+.profile-wrapper .card-img-top {
+    padding: 0 25%;
+    margin-bottom: 1.5rem;
+}
+
+.address-wrapper .edit-btn {
+    position: absolute;
+    right: 10%;
+    top: 8%;
+}
+
+.crop-wrapper .edit-btn {
+    position: absolute;
+    right: 10%;
+    top: 16%;
+}
+
+.Profile-Page .crop-wrapper .badge {
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.Profile-Page .card {
+    box-shadow: 0 6px 3px 0 rgba(0, 0, 0, 0.2), 0 8px 4px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+}

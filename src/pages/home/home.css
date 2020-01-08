@@ -1,0 +1,123 @@
+.app-version {
+    position: fixed;
+    right: 0rem;
+    bottom: -1rem;
+    margin-right: 0.5rem;
+}
+
+.HomePage {
+    margin-top: -1.3rem;
+}
+
+.Landing-container {
+    position: absolute;
+    top: 16rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.Landing-container h1 {
+    color: #9ecc4f;
+    font-size: 3.5rem;
+}
+
+.Landing-container h2 {
+    color: #ef9c00;
+    font-size: 2.2rem;
+    margin-top: 0.5rem;
+    position: absolute;
+    right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .Landing-container h1 {
+        font-size: 3rem;
+    }
+    .Landing-container h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .Landing-container h1 {
+        font-size: 2rem;
+    }
+    .Landing-container h2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .Landing-container h1 {
+        font-size: 1.5rem;
+    }
+    .Landing-container h2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-height: 570px) {
+    .Landing-container {
+        position: absolute;
+        top: 15rem;
+        font-family: 'Kanit', sans-serif;
+    }
+}
+
+@media only screen and (min-height: 1000px) {
+    .Landing-container {
+        position: absolute;
+        top: 22rem;
+        font-family: 'Kanit', sans-serif;
+    }
+}
+
+.Landing-page {
+    text-align: center;
+    background-image: url(../../images/under_construction_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Landing-logo {
+    height: 2.8rem;
+    position: absolute;
+    left: 1.9rem;
+    top: 1rem;
+}
+
+.Landing-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Landing-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Landing-page {
+        text-align: center;
+        background-image: url(../../images/under_construction_bg_mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .Landing-logo {
+        display: none;
+    }
+}

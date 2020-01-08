@@ -1,0 +1,17 @@
+.Login-Page {
+    margin-top: 0rem;
+}
+
+.Login-Page .register-btn {
+    width: 100%;
+}
+
+.Login-Page .login-submit-btn {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Login-Page .input-group-prepend .input-group-text svg{
+    width: 1em;
+}

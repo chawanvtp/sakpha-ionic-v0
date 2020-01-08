@@ -1,0 +1,29 @@
+.NavigationBarCart-Bottom .navbar{
+    background: rgb(255,255,255);
+    box-shadow: 1px 1px grey;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.NavigationBarCart-Bottom .navbar .btn-wrapper {
+    padding: 1rem 1rem;
+}
+
+.NavigationBarCart-Bottom .btn-success{
+    border: none;
+}
+
+.NavigationBarPayment-Bottom .navbar{
+    background: rgb(255,255,255);
+    box-shadow: 1px 1px grey;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.NavigationBarPayment-Bottom .navbar .btn-wrapper {
+    padding: 1rem 1rem;
+}
+
+.NavigationBarCart-Bottom .btn-success{
+    border: none;
+}

@@ -1,0 +1,46 @@
+.NavigationBarTop .fixed-top {
+    z-index: 1330 !important;
+    border: 1px solid #DDE2E5;
+    background-size: cover;
+}
+
+.NavigationBarTop .product-count-badge {
+    position: absolute;
+    top: -25%;
+    right: -15%;
+    background-color: #F7941F;
+}
+
+.NavigationBarTop .bm-overlay {
+    right: 0;
+    top: 0;
+    width: 100% !important;
+    color: white;
+}
+
+.NavigationBarTop .bm-menu-wrap {
+    height: 100% !important;
+    width: 80% !important;
+    background: rgba(88, 93, 87, 0.9) !important;
+    top: 5%;
+    padding-top: 10%;
+}
+
+.NavigationBarTop .bm-cross-button{
+    margin-top: 5%;
+}
+
+.NavigationBarTop .bm-menu-wrap .bm-menu #page-wrap {
+    height: 100%;
+    opacity: 1;
+}
+
+.NavigationBarTop .custom-burger-cross-btn {
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .NavigationBarTop .bm-menu-wrap {
+        top: 9%;
+    }
+}

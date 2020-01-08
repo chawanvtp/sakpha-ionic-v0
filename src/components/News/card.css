@@ -1,0 +1,24 @@
+.News-container{
+    margin-bottom: 0.3rem;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+}
+
+.News-container .NewsCard .card-body {
+    padding: 0;
+    width: 100%;
+    min-height: 12rem;
+}
+
+.News-container .NewsCard .card-img-top {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    padding: 0 0;
+    border: none;
+}
+
+.News-container .react-multi-carousel-dot-list {
+    padding-bottom: 0.5rem;
+}

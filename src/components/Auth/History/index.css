@@ -1,0 +1,15 @@
+.history-wrapper .card-img-top {
+    padding: 0 25%;
+    margin-bottom: 1.5rem;
+}
+
+.history-wrapper .button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.History-Page .card {
+    box-shadow: 0 6px 3px 0 rgba(0, 0, 0, 0.2), 0 8px 4px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+}

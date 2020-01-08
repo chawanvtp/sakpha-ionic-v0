@@ -1,0 +1,30 @@
+.Cycle-btn-wrapper {
+    padding: 0.5rem 1rem;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.Cycle-btn-wrapper .Cycle-btn {
+    background-color: #FFFFFF;
+    border: none;
+    color: #ACB5BD;
+}
+
+.Cycle-btn-wrapper .Cycle-btn-selected {
+    background-color: #FFFFFF;
+    border-color: #9FCD50;
+    color: #9FCD50;
+    border: none;
+    border-bottom: 2px solid #9FCD50;
+    border-radius: 0%;
+}
+
+
+@media only screen and (max-width: 340px) {
+    .Cycle-btn-wrapper .Cycle-btn {
+        font-size: 0.9rem !important;
+    }
+    .Cycle-btn-wrapper .Cycle-btn-selected {
+        font-size: 0.9rem !important;
+    }
+}

@@ -1,0 +1,254 @@
+.StoreList {
+    width: 100%;
+}
+
+.StoreList .btn-group {
+    width: 100%;
+}
+
+.PurchaseModal .store .input-group {
+    margin-bottom: 0;
+}
+
+.PurchaseModal .dialog {
+    position: absolute;
+    top: 0;
+    margin: 0 0;
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.PurchaseModal .dialog .modal-content {
+    position: absolute;
+    bottom: 0%;
+    overflow: auto;
+    padding-bottom: 6rem;
+}
+
+.PurchaseModal .dialog.store .modal-content {
+    position: absolute;
+    top: 30% !important;
+    overflow: auto;
+}
+
+.PurchaseModal .cancel-btn-wrapper {
+    padding: 0 1rem;
+    padding-bottom: 0.5rem !important;
+    text-align: center;
+    background-color: #FFFFFF !important;
+}
+
+.PurchaseModal .cancel-btn {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #F7941F;
+    border-radius: 8px;
+    color: #F7941F;
+}
+
+.PurchaseModal .store .StoreList .store-btn-wrapper .btn-group .detail-btn {
+    padding-left: 0;
+    background: #FFFFFF;
+    border: 1px solid #ACB5BD;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.PurchaseModal .store .StoreList .store-btn-wrapper .btn-group .detail-btn.selected {
+    border: 1px solid #F7941F;
+}
+
+.PurchaseModal .store .StoreList .store-btn-wrapper .btn-group .detail-btn:hover:focus {
+    border: 1px solid #F7941F;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.PurchaseModal .store .StoreList .store-btn-wrapper .icon-check {
+    transform: translate(50%, 75%);
+    -webkit-transform: translate(50%, 75%);
+    color: #F7941F;
+}
+
+.PurchaseModal .product .header-wrapper .image-wrapper img {
+    display: block;
+    object-fit: contain;
+    padding: 0 0;
+    max-height: 7rem;
+}
+
+.PurchaseModal .product .header-wrapper .detail-wrapper {
+    margin-top: 6%;
+    padding-left: 0;
+}
+
+.ConfirmModal .header-wrapper .image-wrapper img {
+    display: block;
+    object-fit: contain;
+    padding: 1rem 0;
+    max-height: 7rem;
+}
+
+.ConfirmModal .image-wrapper img {
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 7rem;
+    display: block;
+    transform: translate(0%, 0%);
+}
+
+.ConfirmModal .header-wrapper .detail-wrapper {
+    margin-top: 6%;
+    padding-left: 0;
+}
+
+.ConfirmModal .card-body .product-size {
+    color: #495057;
+}
+
+.ConfirmModal .card-body .product-quantity {
+    color: #495057;
+}
+
+.ConfirmModal .card-body .delivery-fee {
+    color: #959595;
+}
+
+.PurchaseModal .product .confirm-btn {
+    background-color: #F7941F;
+    border: solid #F7941F;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.PurchaseModal .product .input-size {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 75%;
+}
+
+.PurchaseModal .product .input-quantity-wrapper {
+    width: 100%;
+}
+
+.PurchaseModal .modal-header {
+    background-color: #ffffff;
+    color: #000000;
+    border-bottom: 0.3em solid rgb(248, 249, 250);
+}
+
+.PurchaseModal .modal-title {
+    font-size: 18px;
+}
+
+.PurchaseModal .modal-body {
+    background: rgb(248, 249, 250);
+    /* padding-bottom: 7rem; */
+}
+
+.PurchaseModal .modal-header .header-wrapper {
+    border-bottom: 2px solid #9FCD50;
+    line-height: 2rem;
+}
+
+.PurchaseModal .header-wrapper .header {
+    border-bottom: 1px solid green;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 2rem;
+}
+
+.StoreList .btn-group .order {
+    max-width: 15%;
+    color: #343a40;
+    border-color: #343a40;
+    font-weight: 900;
+}
+
+.PurchaseModal .buy-btn-wrapper {
+    padding: 0.5rem 1rem;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.StoreList .buy-btn {
+    background: #DDE2E5;
+    border: 1px solid #DDE2E5;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.StoreList .buy-btn-selected {
+    background: #F7941F;
+    border: 1px solid #F7941F;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.StoreList .total-price {
+    text-align: right;
+    font-weight: 500;
+    color: #FF8000;
+}
+
+.StoreList .ConfirmModal-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(82, 79, 79, .9);
+}
+
+.StoreList .ConfirmModal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -45%);
+    transform: translate(-50%, -45%);
+    width: 80%;
+}
+
+.StoreList .ConfirmModal .cart-btn {
+    color: white;
+    background: #F7941F;
+    border-radius: 8px;
+}
+
+.StoreList .ConfirmModal .continue-btn {
+    color: #F7941F;
+    border: 1px solid #F7941F;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.StoreList .ConfirmModal-wrapper .header-wrapper {
+    border-bottom: 0.3em solid rgb(248, 249, 250);
+}
+
+.StoreList .ConfirmModal-wrapper .ConfirmModal .paymentBtn {
+    border-color: #343a40;
+}
+
+.StoreList .ConfirmModal-wrapper .ConfirmModal .card-img-top {
+    height: 20rem;
+    object-fit: contain;
+}
+
+.StoreList .ConfirmModal-wrapper .ConfirmModal .card .card-text {
+    margin-bottom: 0;
+}
+
+.StoreList .ConfirmModal-wrapper .ConfirmModal .card .card-title {
+    margin-bottom: 0.3rem;
+}

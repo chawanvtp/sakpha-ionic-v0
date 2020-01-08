@@ -1,0 +1,87 @@
+image: node:alpine
+
+variables:
+  PUBLIC_URL: /my-awesome-app
+  REGISTRY_IMAGE: "$CI_REGISTRY_IMAGE/$CI_PROJECT_NAME-$CI_ENVIRONMENT_SLUG"
+
+stages:
+- build
+- package
+- deploy
+
+build:
+  only:
+  - master
+  - develop
+  stage: build
+  image: node:alpine
+  script: 
+    - yarn install --ignore-platform
+    - yarn build
+  artifacts:
+    paths:
+    - public
+  tags:
+  - runner
+
+
+###############################################
+#                   DEVELOP
+###############################################
+docker-build-develop:
+  only:
+  - develop
+  stage: package
+  script:
+  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY_IMAGE
+  - docker build -f Dockerfile -t $REGISTRY_IMAGE .
+  - docker push $REGISTRY_IMAGE
+  tags:
+  - runner
+  environment:
+      name: develop
+
+docker-deploy-develop:
+  only:
+  - develop
+  stage: deploy
+  script:
+  - docker pull $REGISTRY_IMAGE
+  - docker stop poring || true
+  - docker rm poring || true
+  - docker run -d -p 80:80 --name poring $REGISTRY_IMAGE
+  tags:
+  - docker
+  environment:
+      name: develop
+
+
+###############################################
+#                   STAGING
+###############################################
+docker-build-staging:
+  only:
+  - master
+  stage: package
+  script:
+  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY_IMAGE
+  - docker build -f Dockerfile -t $REGISTRY_IMAGE .
+  - docker push $REGISTRY_IMAGE
+  tags:
+  - runner
+  environment:
+    name: staging
+
+docker-deploy-staging:
+  only:
+  - master
+  stage: deploy
+  script:
+  - docker pull $REGISTRY_IMAGE
+  - docker stop poring || true
+  - docker rm poring || true
+  - docker run -d -p 8080:80 --name poring $REGISTRY_IMAGE
+  tags:
+  - docker-master
+  environment:
+      name: staging

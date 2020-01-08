@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/sakpha-ionic-v0/static/css/main.83fefc33.chunk.css",
+    "main.js": "/sakpha-ionic-v0/static/js/main.77cb47f9.chunk.js",
+    "main.js.map": "/sakpha-ionic-v0/static/js/main.77cb47f9.chunk.js.map",
+    "runtime-main.js": "/sakpha-ionic-v0/static/js/runtime-main.01daf77c.js",
+    "runtime-main.js.map": "/sakpha-ionic-v0/static/js/runtime-main.01daf77c.js.map",
+    "static/css/2.ddd42307.chunk.css": "/sakpha-ionic-v0/static/css/2.ddd42307.chunk.css",
+    "static/js/2.b1977f80.chunk.js": "/sakpha-ionic-v0/static/js/2.b1977f80.chunk.js",
+    "static/js/2.b1977f80.chunk.js.map": "/sakpha-ionic-v0/static/js/2.b1977f80.chunk.js.map",
+    "index.html": "/sakpha-ionic-v0/index.html",
+    "precache-manifest.ceb21f5fe7ea21e3d9bc78f532864aa0.js": "/sakpha-ionic-v0/precache-manifest.ceb21f5fe7ea21e3d9bc78f532864aa0.js",
+    "service-worker.js": "/sakpha-ionic-v0/service-worker.js",
+    "static/css/2.ddd42307.chunk.css.map": "/sakpha-ionic-v0/static/css/2.ddd42307.chunk.css.map",
+    "static/css/main.83fefc33.chunk.css.map": "/sakpha-ionic-v0/static/css/main.83fefc33.chunk.css.map",
+    "static/media/BB1.png": "/sakpha-ionic-v0/static/media/BB1.6eec9ec4.png",
+    "static/media/BB2.png": "/sakpha-ionic-v0/static/media/BB2.9b63370c.png",
+    "static/media/LoadingIcon.png": "/sakpha-ionic-v0/static/media/LoadingIcon.4ae89ec0.png",
+    "static/media/favicon.ico": "/sakpha-ionic-v0/static/media/favicon.d6425f8e.ico",
+    "static/media/image-profile-default.png": "/sakpha-ionic-v0/static/media/image-profile-default.eef653d2.png",
+    "static/media/myCart_empty.png": "/sakpha-ionic-v0/static/media/myCart_empty.089bd468.png",
+    "static/media/nav_top_bg.png": "/sakpha-ionic-v0/static/media/nav_top_bg.a6dd1079.png",
+    "static/media/news.png": "/sakpha-ionic-v0/static/media/news.6fbfd638.png",
+    "static/media/styles.css": "/sakpha-ionic-v0/static/media/revicons.2feb69cc.eot",
+    "static/media/home.css": "/sakpha-ionic-v0/static/media/under_construction_bg_mobile.3be5f596.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01daf77c.js",
+    "static/css/2.ddd42307.chunk.css",
+    "static/js/2.b1977f80.chunk.js",
+    "static/css/main.83fefc33.chunk.css",
+    "static/js/main.77cb47f9.chunk.js"
+  ]
+}

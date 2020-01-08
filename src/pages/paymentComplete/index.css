@@ -1,0 +1,35 @@
+.PaymentComplete-Page {
+    margin-top: -3.5rem;
+    background-color: #FFFFFF;
+}
+
+.PaymentComplete-Page .card {
+    border: none;
+    background: transparent;
+    padding-top: 1.5rem;
+}
+
+.PaymentComplete-Page .card .card-body {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.PaymentComplete-Page .card .card-img-top {
+    display: block;
+    width: 85%;
+    object-fit: contain;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PaymentComplete-Page .card .card-text {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.PaymentComplete-Page .home-btn {
+    background: #8EB846;
+    border-radius: 8px;
+    border: 1px solid #8EB846;
+}

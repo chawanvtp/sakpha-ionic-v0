@@ -1,0 +1,17 @@
+.ForgotPassword-Page {
+    margin-top: 0rem;
+}
+
+.ForgotPassword-Page .register-btn {
+    width: 100%;
+}
+
+.ForgotPassword-Page .login-submit-btn {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ForgotPassword-Page .input-group-prepend .input-group-text svg{
+    width: 1em;
+}

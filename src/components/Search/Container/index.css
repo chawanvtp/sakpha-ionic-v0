@@ -1,0 +1,21 @@
+.SearchContainer {
+    background-color: #FFFFFF;
+}
+
+.SearchContainer .search-btn {
+    background: #FFFFFF;
+    border: none;
+    color: #9FCD50;
+    border: 1px solid #9FCD50;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.SearchContainer .header {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 1rem;
+    color: #000000;
+}

@@ -1,0 +1,152 @@
+.HomePage .react-multiple-carousel__arrow {
+    padding: 0 1rem;
+    min-height: 20px;
+    position: absolute;
+    color: #9FCD50;
+    bottom: 4.8%;
+    background: #FFFFFF;
+    border: 1px solid #9FCD50;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.HomePage .react-multiple-carousel__arrow::before {
+    color: #9FCD50;
+}
+
+.BestSell-container .react-multi-carousel-item {
+    max-height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.HomePage .BestSell-container {
+    border-top: 1px solid #dee2e6!important;
+    padding-top: 0rem !important;
+}
+
+.HomePage .BestSell-container .header-wrapper {
+    background-color: #FFFFFF;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-family: Sarabun;
+    font-style: normal;
+}
+
+.HomePage .BestSell-container .header-wrapper .header {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 0.5rem;
+}
+
+.BestSellCard .card .card-body {
+    padding-bottom: 0rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.BestSellCard .btn {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid #DDE2E5;
+    color: #495057;
+}
+
+.HomePage .BestSellCard .card {
+    border: none;
+    padding: 0 0.7rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 8px 8px 8px 8px;
+}
+
+.BestSellCard .card .card-img-top {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    padding: 0 0;
+    height: 7rem;
+    border: none;
+}
+
+.BestSellCard-star-wrapper div {
+    display: inline;
+}
+
+.BestSellCard-Wrapper {
+    padding-right: 0.2rem !important;
+    padding-left: 0.2rem !important;
+}
+
+.BestSellCard .BestSell-Icon-Wrapper {
+    color: white;
+    background-color: black;
+    padding: 0.25rem;
+    position: absolute;
+    right: 0;
+    top: -0.2rem;
+    font-size: 0.8rem;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .2), 0 2px 0px 0px rgba(0, 0, 0, .19)
+}
+
+.BestSellCard-box-wrapper .carousel-button-group {
+    z-index: 100;
+    position: relative;
+}
+
+.BestSellCard-box-wrapper .carousel-button-group .btn {
+    background: #FFFFFF;
+    border: none;
+    color: #9FCD50;
+    border: 1px solid #9FCD50;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 55%;
+}
+
+@media only screen and (max-width: 340px) {
+    .BestSellCard-box-wrapper .carousel-button-group {
+        text-align: center;
+    }
+    .HomePage .react-multiple-carousel__arrow {
+        padding: 0 1rem;
+        min-height: 20px;
+        position: absolute;
+        bottom: 7%;
+    }
+}
+
+@media only screen and (min-height: 416px) {
+    .BestSellCard-box-wrapper .carousel-button-group {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-height: 660px) {
+    .BestSellCard-box-wrapper .carousel-button-group {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-height: 800px) {
+    .BestSellCard-box-wrapper .carousel-button-group {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-height: 1000px) {
+    .BestSellCard-box-wrapper .carousel-button-group {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-height: 1280px) {
+    .BestSellCard-box-wrapper .carousel-button-group {
+        text-align: center;
+    }
+}

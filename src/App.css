@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+/* Default APP Styling */
+
+.App-product-title {
+  font-weight: 600;
+  color: #212429;
+  font-size: 16px;
+}
+
+.App-product-common-title {
+  color: #ACB5BD;
+  font-size: 14px;
+}
+
+.App-product-price {
+  font-weight: 600;
+  color: #F7941F;
+  font-size: 16px;
+}
+
+.App-Page-top {
+  padding-top: 4rem;
+  height: 100%;
+  background-color: #F5F7F2;
+}
+
+.App-star-wrapper {
+  display: inline;
+}
+
+.App-seller-name {
+  color: black;
+}
+
+.App-seller-distance {
+  color: #ACB5BD;
+}
+
+/* Boostrap CUSTOM */
+
+.btn-success {
+  color: #fff !important;
+  background-color: #8EB846 !important;
+  border-color: #8EB846 !important;
+  border-radius: 8px !important;
+}
+
+.btn-warning {
+  color: #fff !important;
+  background-color: #F7941F !important;
+  border-color: #F7941F !important;
+  border-radius: 8px !important;
+}
+
+.btn-success:focus {
+  box-shadow: 0 0 0 0.2rem #8EB846 !important;
+}
+
+.btn-warning:focus {
+  box-shadow: 0 0 0 0.2rem #F7941F !important;
+}
