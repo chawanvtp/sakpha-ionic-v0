@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sakpha-ionic-v0/precache-manifest.227f96f4ee29203aec2c1903f919e892.js"
+  "/sakpha-ionic-v0/precache-manifest.d89f17eae7f02279c8b0e7e5587d4074.js"
 );
 
 self.addEventListener('message', (event) => {
